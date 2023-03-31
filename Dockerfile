@@ -1,3 +1,2 @@
-FROM ubuntu
-RUN apt-get update -y
-RUN apt-get install -y apache2
+FROM httpd:2.4
+COPY ./app  /usr/local/apache2/htdocs/
