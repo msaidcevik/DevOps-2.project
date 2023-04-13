@@ -1,0 +1,19 @@
+{
+    "family": "kittens-app",
+    "networkMode": "awsvpc",
+    "containerDefinitions": [{
+    	"name": "kittens-app",
+    	"image": "103679366807.dkr.ecr.us-east-1.amazonaws.com/kittens/apache:latest",
+    	"portMappings": [{
+    		"containerPort": 80,
+    		"protocol": "tcp"
+   		}],
+    	"essential": true
+   }],
+    "requiresCompatibilities": [
+   		"FARGATE"
+	],
+	"cpu": "256",
+	"memory": "512",
+   		"executionRoleArn": "arn:aws:iam::103679366807:role/ecsTaskExecutionRole"
+}
