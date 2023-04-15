@@ -1,5 +1,5 @@
 {
-    "serviceName": "kittens-sservice",
+    "serviceName": "kittens-service",
     "taskDefinition": "kittens-task",
     "loadBalancers": [
         {
