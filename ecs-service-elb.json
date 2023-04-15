@@ -1,0 +1,13 @@
+{
+    "serviceName": "kittens-sservice",
+    "taskDefinition": "kittens-task",
+    "loadBalancers": [
+        {
+            "loadBalancerName": "kittens-lb",
+            "containerName": "kittens",
+            "containerPort": 80
+        }
+    ],
+    "desiredCount": 1,
+    "role": "ecsTaskExecutionRole"
+}
