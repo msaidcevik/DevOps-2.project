@@ -11,3 +11,4 @@ wget $FOLDER/cat2.jpg
 wget $FOLDER/cat3.png
 sudo systemctl start apache2
 sudo systemctl enable apache2
+
